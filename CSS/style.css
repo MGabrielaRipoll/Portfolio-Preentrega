@@ -1,0 +1,190 @@
+html{
+    /*etiqueta raiz */ font-size: 2rem; /* 20px */
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    background-color: black;
+}
+/* imagen header celular */
+header {
+    background-image: url(../IMAGENES/fondo_header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* titulo celular */
+h1{
+    font-size: 1rem;
+    text-align: center;
+}
+/* navegador celular */
+.navbar{
+    background-color: transparent !important;
+}
+.navbar-brand{
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+/* main index celular */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagenPersonal {
+    width: 80px;
+    border-radius: 150px;
+    border: 3px solid white;
+    justify-self: center;
+}
+.presentacion{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 0.4rem;
+    align-self: center;
+}
+/* section musica celular */
+.musica{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+p {    
+    color: aliceblue;
+    align-self: center;
+    font-size: 0.4rem;
+    font-weight: bold;
+    line-height: 95%;
+}
+
+/* footer celular */
+.redes_footer{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logos{
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    border-color: black;
+}
+/* logo ws celular */
+.ws_logo{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 400px;
+    left: 300px;
+} 
+@media only screen and (min-width: 768px) {
+
+    .contenedor{
+        background-color:black;
+    }
+/* imagen header */
+    header {
+        background-image: url(../IMAGENES/fondo_header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+/* titulo */
+    h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 2rem;
+        color: blueviolet;
+        text-align: center;
+        font-weight: bold;
+    }
+/* navegador */
+    .navbar{
+        background-color: transparent !important;
+    }
+    .navbar-brand:hover{
+        color: blueviolet;
+    }
+    .navbar-brand{
+        font-weight: bold;
+        font-size: 1rem;
+    }
+/* main index */
+    .bienvenida{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .imagenPersonal {
+        height: 400px;
+        width: 300px;
+        border-radius: 150px;
+        border: 5px solid white;
+    }
+    .presentacion{
+        color: aliceblue;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 95%;
+    }
+/* section musica */
+    p{
+        color:black;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .spotify{
+        width: 50%;
+    }
+/* main estudios */
+    .estudios{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 20px;
+        text-align: left;
+        justify-content: space-evenly;
+    }
+    .carreras{
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        text-justify: justify;
+        justify-content: space-around;
+        background-color: rgb(63, 16, 107);
+    }
+    .logo_estudios{
+        width: 150px;
+        height: 150px;
+        border-radius: 6px;
+        border-color: black;
+    }
+/* footer */
+    .redes_footer{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        list-style: none
+    }
+    .logos{
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        border-color: black;
+    }
+/* logo ws */
+    .ws_logo{
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        top: 550px;
+        left: 1250px;
+    } 
+}
