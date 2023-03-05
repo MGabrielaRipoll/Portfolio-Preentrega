@@ -1,6 +1,4 @@
-html{
-    /*etiqueta raiz */ font-size: 2rem; /* 20px */
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -18,15 +16,15 @@ header {
 }
 /* titulo celular */
 h1{
-    font-size: 1rem;
+    font-size: 30px;
     text-align: center;
 }
 /* navegador celular */
 .navbar{
-    background-color: transparent !important;
+    background-color: transparent;
 }
 .navbar-brand{
-    font-size: 0.5rem;
+    font-size: 20px;
     font-weight: bold;
 }
 /* main index celular */
@@ -45,8 +43,17 @@ main{
 .presentacion{
     color: aliceblue;
     font-weight: bold;
-    font-size: 0.4rem;
-    align-self: center;
+    font-size: 15px;
+    text-align: justify;
+    margin: 5px;
+}
+
+/* formulario de contacto celular */
+.formularioDContacto{
+    font-size: 15px;
+    font-weight: bold;
+    color: aqua;
+    
 }
 /* section musica celular */
 .musica{
@@ -58,11 +65,49 @@ main{
 p {    
     color: aliceblue;
     align-self: center;
-    font-size: 0.4rem;
+    font-size: 15px;
     font-weight: bold;
-    line-height: 95%;
+    line-height: 90%;
 }
-
+/* estudios celular */
+.estudios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 10px;
+    text-align: left;
+    justify-content: space-evenly;
+}
+.carreras{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    text-justify: center;
+    margin: 5px;
+    background-color: rgb(63, 16, 107);
+}
+.logo_estudios{
+    width: 50px;
+    height: 50px;
+    border-color: black;
+}
+/* proyectos celular */
+.carousel-inner{
+    width: 300px;
+}
+.d-block{
+    width: 250px;
+    height: 250px;
+}
+.p_carrusel{
+    background-color: blueviolet;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
 /* footer celular */
 .redes_footer{
     list-style: none;
@@ -82,109 +127,174 @@ p {
     height: 50px;
     position: fixed;
     top: 400px;
-    left: 300px;
+    left: 400px;
 } 
-@media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 768px) {
+        /* logo ws para tablet */
+        .ws_logo{
+            left: 720px;
+        }
+        /* footer para tablet */
+        .redes_footer{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            list-style: none
+        }
+        /* carrusel para tablet */
+        .carousel-inner{
+            width: 400px;
+        }
+        .d-block{
+            width: 300px;
+            height: 300px;
+        }
+        .p_carrusel{
+            background-color: blueviolet;
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
 
-    .contenedor{
-        background-color:black;
-    }
-/* imagen header */
-    header {
-        background-image: url(../IMAGENES/fondo_header.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-/* titulo */
-    h1{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 2rem;
-        color: blueviolet;
-        text-align: center;
-        font-weight: bold;
-    }
-/* navegador */
-    .navbar{
-        background-color: transparent !important;
-    }
-    .navbar-brand:hover{
-        color: blueviolet;
-    }
-    .navbar-brand{
-        font-weight: bold;
-        font-size: 1rem;
-    }
-/* main index */
-    .bienvenida{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-    .imagenPersonal {
-        height: 400px;
-        width: 300px;
-        border-radius: 150px;
-        border: 5px solid white;
-    }
-    .presentacion{
-        color: aliceblue;
-        font-weight: bold;
-        font-size: 1rem;
-        line-height: 95%;
-    }
-/* section musica */
-    p{
-        color:black;
-        font-size: 1rem;
-        text-align: center;
-    }
-    .spotify{
-        width: 50%;
-    }
-/* main estudios */
-    .estudios{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        row-gap: 20px;
-        text-align: left;
-        justify-content: space-evenly;
-    }
-    .carreras{
-        height: 150px;
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        text-justify: justify;
-        justify-content: space-around;
-        background-color: rgb(63, 16, 107);
-    }
-    .logo_estudios{
-        width: 150px;
-        height: 150px;
-        border-radius: 6px;
-        border-color: black;
-    }
-/* footer */
-    .redes_footer{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        list-style: none
-    }
-    .logos{
-        width: 70px;
-        height: 70px;
-        border-radius: 6px;
-        border-color: black;
-    }
-/* logo ws */
-    .ws_logo{
-        width: 70px;
-        height: 70px;
-        position: fixed;
-        top: 550px;
-        left: 1250px;
-    } 
-}
+        @media only screen and (min-width: 1020px) {
+            .contenedor{
+                background-color:black;
+            }
+        /* imagen header */
+            header {
+                background-image: url(../IMAGENES/fondo_header.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        /* titulo */
+            h1{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 50px;
+                color: blueviolet;
+                text-align: center;
+                font-weight: bold;
+            }
+        /* navegador */
+            .navbar{
+                background-color: transparent !important;
+            }
+            .navbar-brand:hover{
+                color: blueviolet;
+            }
+            .navbar-brand{
+                font-weight: bold;
+                font-size: 25px;
+            }
+        /* main index */
+            .bienvenida{
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+            .imagenPersonal {
+                height: 400px;
+                width: 300px;
+                border-radius: 150px;
+                border: 5px solid blueviolet;
+            }
+            .presentacion{
+                color: aliceblue;
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 95%;
+                text-align: justify;
+                margin: 10px;
+            }
+
+        /* formulario de contacto*/
+            .formularioDContacto{
+                font-size: 20px;
+                color: aqua;
+                font-weight: bold;
+                width: 750px;
+                display: flex;
+                align-items: left;
+                justify-content: left;
+                padding-left: 0;
+            }
+        /* mapa */
+            .mapa_contacto{
+                justify-content: center;
+            }
+            
+        /* section musica */
+            .musica{
+                height: 200px;
+                align-items:center;
+            }
+            p{
+                color:black;
+                font-size: 20px;
+                text-align: justify;
+            }
+
+        /* main estudios */
+            .estudios{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                row-gap: 20px;
+                text-align: left;
+                justify-content: space-evenly;
+            }
+            .carreras{
+                height: 150px;
+                width: 700px;
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                text-justify: justify;
+                justify-content: space-around;
+                background-color: rgb(63, 16, 107);
+            }
+            .logo_estudios{
+                width: 150px;
+                height: 150px;
+                border-radius: 6px;
+                border-color: black;
+            }
+        /* carrusel proyectos */
+            .carousel-inner{
+                width: 500px;
+            }
+            .d-block{
+                width: 400px;
+                height: 400px;
+            }
+            .p_carrusel{
+                background-color: blueviolet;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+            }
+            
+        /* footer */
+            .redes_footer{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                list-style: none
+            }
+            .logos{
+                width: 70px;
+                height: 70px;
+                border-radius: 6px;
+                border-color: black;
+            }
+        /* logo ws */
+            .ws_logo{
+                width: 70px;
+                height: 70px;
+                position: fixed;
+                top: 550px;
+                left: 1250px;
+            } 
+        }
