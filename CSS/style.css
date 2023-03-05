@@ -127,7 +127,7 @@ p {
     height: 50px;
     position: fixed;
     top: 400px;
-    left: 400px;
+    left: 350px;
 } 
     @media only screen and (min-width: 768px) {
         /* logo ws para tablet */
@@ -165,7 +165,7 @@ p {
         /* imagen header */
             header {
                 background-image: url(../IMAGENES/fondo_header.jpg);
-                background-position: center;
+                background-position: initial;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
