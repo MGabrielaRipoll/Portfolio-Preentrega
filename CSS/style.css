@@ -298,11 +298,15 @@ p {
                 border-color: black;
             }
         /* logo ws */
-            .ws_logo{
+            .div-ws{
                 width: 70px;
                 height: 70px;
                 position: fixed;
-                top: 580px;
-                left: 1100px;
+                /* top: 700px;
+                right: 3rem; */
             } 
+            .ws_logo{
+                width: 100%;
+                height: 100%;
+            }
         }
