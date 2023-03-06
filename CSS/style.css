@@ -178,6 +178,11 @@ p {
                 font-weight: bold;
             }
         /* navegador */
+            .navbar-nav{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+            }
             .navbar{
                 background-color: transparent !important;
             }
@@ -229,6 +234,7 @@ p {
             .musica{
                 height: 200px;
                 align-items:center;
+                padding: 10px;
             }
             p{
                 color:black;
@@ -281,7 +287,9 @@ p {
                 display: flex;
                 justify-content: space-around;
                 flex-direction: row;
-                list-style: none
+                list-style: none;
+                padding: 1rem;
+                margin: 0;
             }
             .logos{
                 width: 70px;
@@ -294,7 +302,7 @@ p {
                 width: 70px;
                 height: 70px;
                 position: fixed;
-                top: 550px;
-                left: 1250px;
+                top: 580px;
+                left: 1100px;
             } 
         }
