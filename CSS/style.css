@@ -118,6 +118,7 @@ p {
 .logos{
     width: 50px;
     height: 50px;
+    padding: 10px;
     border-radius: 7px;
     border-color: black;
 }
@@ -298,15 +299,11 @@ p {
                 border-color: black;
             }
         /* logo ws */
-            .div-ws{
+            .ws_logo{
                 width: 70px;
                 height: 70px;
                 position: fixed;
-                /* top: 700px;
-                right: 3rem; */
+                top: 600px;
+                left: 1000px;
             } 
-            .ws_logo{
-                width: 100%;
-                height: 100%;
-            }
         }
